@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TETRIS</title>
+
+
+    <style>
+        body{
+            text-align: center;
+            display: flex;
+        }
+
+        #screen {
+            border: 10px solid #CCC;
+            image-rendering: pixelated;
+            image-rendering: crisp-edges;
+            image-rendering: -moz-crisp-edges;
+            width: 400px;
+            height: 600px;
+
+        }
+
+        #nextPart {
+            border: 1px solid #CCC;
+            image-rendering: pixelated;
+            image-rendering: crisp-edges;
+            image-rendering: -moz-crisp-edges;
+            width: 200px;
+            height: 200px;
+
+        }
+
+    </style>
+
+
+
+</head>
+<body>
+    
+    <div id="commands">
+        <button id="btnStart" onclick="game.start()">START</button>
+        <button id="btnPause" onclick="game.pause()">PAUSE</button>
+        <label id="txtScore" for="">0</label>
+
+        <canvas id="nextPart" width="10" height="10"></canvas>
+
+    </div>
+    <canvas id="screen" width="10" height="15"></canvas>
+
+    
+
+    <script src="./controller.js"></script>
+
+
+</body>
+</html>
